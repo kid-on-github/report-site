@@ -1,0 +1,66 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root{
+    --width: 1300px;
+}
+
+h1{
+    font-family: Futura;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin: 5px 0;
+}
+
+h3{
+    margin: 3px 0;
+    text-transform: lowercase;
+    color: rgba(0, 0, 0, .4);
+    font-size: 18px;
+}
+
+p{
+    line-height: 2em;
+}
+
+main{
+    max-width: var(--width);
+    margin: auto;
+    min-height: 200vh;
+}
+
+section{
+    margin: 100px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+section > div{
+    margin: 0;
+}
+
+.img{
+    text-align: center;
+}
+
+section img{
+    max-width: 100%;
+    top: 30px;
+    max-height: calc(100vh - 60px);
+}
+
+.text{
+    padding: 30px 50px;
+    padding-bottom: 0;
+}
+
+
+section:nth-child(even) .text{
+    order: 2;
+}
+
+p{
+    font-size: 20px;
+}
